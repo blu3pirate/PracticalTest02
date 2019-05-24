@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PracticalTest02MainActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/clientText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CLIENT"
+        android:gravity="center"
+        android:enabled="false"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Pokename"
+            android:enabled="true"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/abilities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Abilities"/>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/serverText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SERVER"
+        android:gravity="center"
+        android:enabled="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/serverPort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Port"
+            android:enabled="true"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+</LinearLayout>
